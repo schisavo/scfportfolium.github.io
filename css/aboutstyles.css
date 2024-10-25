@@ -1,0 +1,76 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Young+Serif&display=swap');
+:root{
+    --funteMinecraft:'Pixelify Sans', cursive;
+    --fuenteRara:'Young Serif', serif;
+}
+body{
+    background-color: rgb(19, 24, 27);
+}
+ul{
+    font-family: var(--funteMinecraft);
+    display: flex;
+    gap: 72px;
+    margin: 20px;
+}
+
+ul li{
+    list-style: none;
+}
+ul li a{
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+
+ul:hover li a{
+    color: #30edf4;
+}
+
+ul:hover li a:not(:hover){
+    color: white;
+}
+
+
+
+/*                                                    scroll snap carousel                                           
+.carousel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.carousel {
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(1100px) rotateY(0deg);
+    animation: rotate 12s linear infinite;
+    width: 300px;
+    height: 200px;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+}
+
+.carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+@keyframes rotate{
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+} */
+

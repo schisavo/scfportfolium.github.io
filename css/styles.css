@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Young+Serif&display=swap');
+:root{
+    --funteMinecraft:'Pixelify Sans', cursive;
+    --fuenteRara:'Young Serif', serif;
+    --color-fondo: rgb(18, 29, 36);
+    --color-bloques: black;
+    --color-principal: rgb(5, 5, 248);
+    --hover-color-principal: #30edf4; 
+    --color-blanco: white;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--color-fondo);
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--funteMinecraft);
+    background: var(--color-bloques);
+}
+ul li{
+    list-style: none;
+    padding: 2%;
+}
+ul li a{
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    color: var(--color-principal);
+    font-size: 3vw;
+}
+/*    hover de las letras del ul    */
+ul:hover li a{
+    color: var(--hover-color-principal);
+}
+ul:hover li a:not(:hover){
+    color: var(--color-blanco);
+}
+.who-i-am{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 70vh;
+    margin: 2%;
+    background: var(--color-principal);
+}
+/*                                                 informacion                               */
+.who-i-am h2{
+    font-family: var(--funteMinecraft);
+    font-size: 5vw;
+}
+.who-i-am p{
+    font-size: 3vw;
+}
+.informacion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 0 5%;
+    margin: 5% 0;
+    background: var(--color-bloques);
+    border: 5px dashed var(--color-principal);
+}
+.informacion h2{
+    font-family: var(--funteMinecraft);
+    font-size: 30px;
+    color: var(--color-bloques);
+    background-color: var(--color-principal);
+    margin: 0;
+}
+.informacion p{
+    color: var(--color-blanco);
+}
+.informacion p span{
+    font-family: var(--funteMinecraft);
+    color: var(--color-principal);
+    font-size: 20px;
+}
+.informacion .datos-personales-y-habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.datos-personales p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+.informacion .datos-personales-y-habilidades .datos-personales{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    
+}
+.informacion .datos-personales-y-habilidades .datos-personales h3{
+    color: var(--color-principal);
+    font-family: var(--funteMinecraft);
+    font-size: 30px;
+}
+.informacion .datos-personales-y-habilidades .habilidades h3{
+    color: var(--color-principal);
+    font-family: var(--funteMinecraft);
+    font-size: 30px;
+}
+.habilidades{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contenido-habilidades{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.habilidades .contenido-habilidades p{
+    display: flex;
+    padding: 1%;
+    width: auto;
+    height: auto;
+    margin: 2%;
+    background-color: rgb(43, 42, 42);
+}
+#hoja-de-vida{
+    font-size: 20px;
+    font-family: var(--funteMinecraft);
+    color: var(--color-principal);
+    border: 2px solid var(--color-principal);
+    background-color: black;
+}
+#hoja-de-vida:hover{
+    color: black;
+    background-color: var(--color-principal);
+}
+/*                                                 proyectos portafolio                               */
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-bloques);
+}
+.proyectos h2{
+    font-family: var(--funteMinecraft);
+    font-size: 30px;
+    color: var(--color-principal);
+}
+.proyectos .contenedor-proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.botones-navegacion-proyectos button{
+    font-size: 20px;
+    font-family: var(--funteMinecraft);
+    color: var(--color-principal);
+    border: 3px solid var(--color-principal);
+    background: transparent;
+}
+.botones-navegacion-proyectos button:hover{
+    color: var(--color-bloques);
+    background: var(--color-principal);
+}
+/*                                                 zoom-wrapper                               */
+.zoom-wrapper{
+    border-radius: 4px;
+    width: 400px;
+    height: 200px;
+    margin: 2%;
+}
+.zoom-wrapper img{
+    transition: transform 900ms;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.zoom-wrapper:hover img{
+    transform: scale(1.5);
+}

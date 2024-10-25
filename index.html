@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Porfolium of Sebastian Chisavo Forero</title>
+    <link rel="icon" type="image/x-icon" href="images/persona.jpg">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/styloFinal.css">
+</head>
+<body>
+    <!--                                                           HEADER                                                        -->
+
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#sobremi">Sebastian</a>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">START</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars fa-bounce"></i>
+            </div>
+        </header>
+    </div>
+
+
+    <!--                                                               INICIO                                                            -->
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <!-- https://i.pinimg.com/474x/96/86/4b/96864b0c18d740dcc6fb8054c8b31e83.jpg -->
+                <img src="images/persona.jpeg" alt="">
+            </div>
+            <h1>Sebastian Chisavo Forero</h1>
+            <h2>Software Programmer - Indie VideoGames Developer</h2>
+        </div>
+    </section>
+
+
+    <!--                                                          Seccion sobre mi                                                        -->
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About Me</h2>
+            <p><span>Hi, I'm Sebastian Chisavo Forero</span>  a development enthusiast with a penchant for drawing and design. 
+                My fascination with visual art and technology has led me to explore multiple facets of software development, from website creation to 
+                Android mobile application design and development. Additionally, I am deeply 
+                involved in the exciting field of artificial intelligence, where I seek to merge creativity with technological innovation.</p>
+                <div class="fila">
+                    <!--             Datos personales               -->
+                    <div class="col">
+                        <h3>Personal Information</h3>
+                        <ul>
+                            <li>
+                                <strong>Birthday</strong>
+                                22-07-2004
+                            </li>
+                            <li>
+                                <strong>Phone</strong>
+                                3008350972
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                sebastianchisavoforero@gmail.com
+                            </li>
+                            <li>
+                                <strong>Address</strong>
+                                Pereira - Risaralda - Colombia
+                            </li>
+                            <li>
+                                <strong>Level</strong>
+                                <span>Technologist</span>
+                            </li>
+                        </ul> 
+                    </div>
+
+                    <!--               intereses                    -->
+                    <div class="col">
+                        <h3>Interest</h3>
+                        <div class="contenedor-intereses">
+                            <div class="intereses">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <span>Videogames</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-mobile"></i>
+                                <span>Android</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-pager"></i>
+                                <span>Web Pages</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-dragon"></i>
+                                <span>Models 3D</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-pencil"></i>
+                                <span>Desing</span>
+                            </div>
+                            <div class="intereses">
+                                <i class="fa-solid fa-vr-cardboard"></i>
+                                <span>Virtual Reality</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- <button>
+            Download CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+        </button> -->
+    </section>
+
+    <!--                                                          Seccion skills                                                          -->
+
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- TECHNICAL SKILLS -->
+                <div class="col">
+                    <h3>Programming Skills</h3>
+                    <div class="skill">
+                        <span>Html,CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Kotlin</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Php</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySql</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills-->
+                <div class="col">
+                    <h3>Other Skills</h3>
+                    <div class="skill">
+                        <span>Unity</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Android Studio</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Blender</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>15%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Artificial Intelligence</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Arduino</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Node JS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adobe Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>5%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adobe Illustrator</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>5%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--                                                           Curriculum                                                            -->
+     <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Experience</h3>
+                    <div class="item izq">
+                        <h4>School page development.</h4>
+                        <span class="casa"></span>
+                        <span class="fecha">From November 2023 to April 2024</span>
+                        <p>Website development for the Carlota Sanchez Educational Institution.</p>
+                            <div class="conectori">
+                                <div class="circuloi">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnoparque</h4>
+                        <span class="casa"></span>
+                        <span class="fecha">From November 2023 to April 2024</span>
+                        <p>I worked at technoparque Pereira for six month developing interactive applications in Unity for VR, pc and android devices. 
+                            On top of that, I also worked on various web applications and mobile applications in the company, using Unity, NodeJS, Java 
+                            and PHP among others.</p>
+                            <div class="conectori">
+                                <div class="circuloi">
+
+                                </div>
+                            </div>
+                            
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Educacion</h3>
+                    <div class="item der">
+                        <h4>Software Programming Technician</h4>
+                        <span class="casa">Sena</span>
+                        <span class="fecha">2019 to 2021</span>
+                        <p>Introduction to programming with C++ and web development.</p>
+                            <div class="conectord">
+                                <div class="circulod">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Software Development and Analysis Technologist</h4>
+                        <span class="casa">Sena CDITI</span>
+                        <span class="fecha">2021 to 2024</span>
+                        <p>Software negotiation, documentation, design, testing and languages ​​python, java, PHP, web development 
+                            with javascript, frameworks, libraries and databases.</p>
+                            <div class="conectord">
+                                <div class="circulod">
+
+                                </div>
+                            </div>
+                            
+                    </div>
+                    <div class="item der">
+                        <h4>Software Engineering</h4>
+                        <span class="casa">CIAF university</span>
+                        <span class="fecha">Currenly</span>
+                        <p>Mathematics and physics.</p>
+                            <div class="conectord">
+                                <div class="circulod">
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+     </section>
+
+    <!--                                                       SECCION PORTAFOLIO                                                         -->
+
+     <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="images/Proyects/Pokemon.png" alt="">
+                    <div class="overlay">
+                        <h3>Web Aplication Pokemon</h3>
+                        <p>Html,Css,Javascript,PHP,MySql and Api Pokemon.</p>
+                        <div class="iconos">
+                            <a href="https://github.com/schisavo/PokemonWeb" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/Proyects/gamingPage.JPG" alt="">
+                    <div class="overlay">
+                        <h3>Gaming company promotional page</h3>
+                        <p>Html,Css,Javascript</p>
+                        <div class="iconos">
+                            <a href="https://schisavo.github.io/ritogamer.github.io/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/Proyects/supercell.png" alt="">
+                    <div class="overlay">
+                        <h3>Static Website</h3>
+                        <p>Html,Css,Javascript</p>
+                        <div class="iconos">
+                            <a href="https://schisavo.github.io/SuperCell.github.io/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+   <!--                                                              FOOTER                                                                -->
+<footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up fa-fade"></i>
+    </a>
+    <div class="redes">
+        <a href="facebook"> <i class="fa-brands fa-facebook"></i> </a>
+        <a href="twiter"> <i class="fa-brands fa-twitter"></i> </a>
+        <a href="whatssap"> <i class="fa-brands fa-whatsapp"></i> </a>
+        <a href="unity"> <i class="fa-brands fa-unity"></i> </a>
+    </div>
+    
+</footer>
+
+    <!--  JAVASCRIPT -->
+    <script src="javascript/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Young+Serif&display=swap');
+/* --funteMinecraft:'Pixelify Sans', cursive;
+    --fuenteRara:'Young Serif', serif; */
+:root{
+    --color-principal: rgb(19, 33, 226);
+    --hover-color-principal:aqua;
+    --color-blanco: white;
+    --color-fondo: rgb(0, 0, 0);
+    --color-bloques: rgb(22, 38, 48);
+    --funteMinecraft:'Pixelify Sans', cursive;
+    --fuenteExtra:'Young Serif', serif;
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family: var(--fuenteExtra);
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /*  me permite deslizar cuando hago clic en los lincks del menu  */
+    scroll-behavior: smooth;
+}
+
+/*                                               MENU                                                          */
+
+.contenedor-header{
+    background-color: var(--color-fondo);
+    position: sticky;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: var(--funteMinecraft);
+    font-size: 36px;
+    color: var(--color-principal);
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: var(--color-blanco);
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenedor-header header nav ul:hover li a{
+    color: var(--hover-color-principal);
+}
+.contenedor-header header nav ul:hover li a:not(:hover){
+    color: var(--color-principal);
+}
+/* icono  */
+.nav-responsive{
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    display: none;
+}
+
+/*                                                               seccion inicio                                                             */
+
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../images/VID_20240328193726.gif);
+    background-size: 50%;
+    background-repeat:repeat-x;
+    height: 90vh;
+    color: var(--color-blanco);
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: var(--color-fondo);
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid var(--color-principal);
+    display: block;
+    width: 60%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: var(--funteMinecraft);
+}
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+/*                                                              SOBRE MI                                                                   */
+
+.sobremi{
+    border: 5px dashed var(--color-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-blanco);
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: var(--funteMinecraft);
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+    color: var(--color-principal);
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+}
+.sobremi .fila .col{
+    width: 50%;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: var(--funteMinecraft);
+    margin-bottom: 25px;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+} 
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: var(--color-principal);
+    width: 130px;
+} 
+.sobremi .fila .col ul li span{
+    background-color: var(--color-principal);
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sobremi .fila .col .contenedor-intereses .intereses{
+    width: 120px;
+    height: 120px;
+    background-color: var(--color-fondo);
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    text-align: center;
+}
+.sobremi .fila .col .contenedor-intereses .intereses:hover{
+    background-color: var(--color-principal);
+    color: var(--hover-color-principal);
+    cursor: pointer;
+}
+.sobremi .fila .col .contenedor-intereses .intereses i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--color-principal);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: var(--color-principal);
+    position: relative;
+    z-index: 10;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-principal);
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover{
+    color: var(--color-blanco);
+    border: 5px solid var(--color-blanco);
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+
+/*                                                                       skills                                                             */
+
+.skills{
+    background-color: var(--color-bloques);
+    color: var(--color-blanco);
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    font-family: var(--funteMinecraft);
+    text-align: center;
+    padding:20px 0;
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: var(--fuenteExtra);
+    margin-bottom: 25px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: var(--color-principal);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: var(--color-principal);
+    border-radius: 20px;
+    line-height: 50px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 20px;
+}
+/* estilos de javascript*/
+/* technical skills */
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 45%;}
+}
+.skills .skill .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+@keyframes python {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.skills .skill .java{
+    width: 0%;
+    animation: 2s java forwards;
+}
+@keyframes java {
+    0%{width: 0%;}
+    100%{width: 35%;}
+}
+.skills .skill .kotlin{
+    width: 0%;
+    animation: 2s kotlin forwards;
+}
+@keyframes kotlin {
+    0%{width: 0%;}
+    100%{width: 35%;}
+}
+.skills .skill .csharp{
+    width: 0%;
+    animation: 2s csharp forwards;
+}
+@keyframes csharp {
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+.skills .skill .php{
+    width: 0%;
+    animation: 2s php forwards;
+}
+@keyframes php {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+.skills .skill .mysql{
+    width: 0%;
+    animation: 2s mysql forwards;
+}
+@keyframes mysql {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+/* profesional skills */
+.skills .skill .unity{
+    width: 0%;
+    animation: 2s unity forwards;
+}
+@keyframes unity {
+    0%{width: 0%;}
+    100%{width: 45%;}
+}
+.skills .skill .androidstudio{
+    width: 0%;
+    animation: 2s androidstudio forwards;
+}
+@keyframes androidstudio {
+    0%{width: 0%;}
+    100%{width: 30%;}
+}
+.skills .skill .blender{
+    width: 0%;
+    animation: 2s blender forwards;
+}
+@keyframes blender {
+    0%{width: 0%;}
+    100%{width: 15%;}
+}
+.skills .skill .ai{
+    width: 0%;
+    animation: 2s ai forwards;
+}
+@keyframes ai {
+    0%{width: 0%;}
+    100%{width: 20%;}
+}
+.skills .skill .arduino{
+    width: 0%;
+    animation: 2s arduino forwards;
+}
+@keyframes arduino {
+    0%{width: 0%;}
+    100%{width: 10%;}
+}
+.skills .skill .nodejs{
+    width: 0%;
+    animation: 2s nodejs forwards;
+}
+@keyframes nodejs {
+    0%{width: 0%;}
+    100%{width: 20%;}
+}
+.skills .skill .nodejs{
+    width: 0%;
+    animation: 2s nodejs forwards;
+}
+@keyframes nodejs {
+    0%{width: 0%;}
+    100%{width: 20%;}
+}
+.skills .skill .photoshop{
+    width: 0%;
+    animation: 2s photoshop forwards;
+}
+@keyframes photoshop {
+    0%{width: 0%;}
+    100%{width: 5%;}
+}
+.skills .skill .illustrator{
+    width: 0%;
+    animation: 2s illustrator forwards;
+}
+@keyframes illustrator {
+    0%{width: 0%;}
+    100%{width: 5%;}
+}
+/*                                                              SECCION CURRICULUM                                                          */
+.curriculum{    
+    background-color: var(--color-fondo);
+    color: var(--color-blanco);
+    padding: 50px 20px;
+}
+.curriculum .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2{
+    font-size: 48px;
+    font-family: var(--funteMinecraft);
+    text-align: center;
+    padding:20px 0;
+}
+.curriculum .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.curriculum .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3{
+    font-size: 28px;
+    font-family: var(--fuenteExtra);
+    margin-bottom: 25px;
+}
+.curriculum .fila .izquierda{
+    border-right: 2px solid var(--color-bloques);
+}
+.curriculum .fila .derecha{
+    border-left: 2px solid var(--color-bloques);
+}
+.curriculum .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: var(--color-bloques);
+    position: relative;
+}
+.curriculum .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa{
+    color: var(--color-principal);
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .item .fecha{
+    display: block;
+    color: var(--color-principal);
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p{
+    line-height: 24px;
+}
+.curriculum .fila .izq{
+    border-right: 2px solid var(--color-principal);
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    border-left: 2px solid var(--color-principal);
+    margin-left: 20px;
+}
+.curriculum .fila .item .conectori{
+    height: 2px;
+    background-color: var(--color-principal);
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--color-principal);
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord{
+    height: 2px;
+    background-color: var(--color-principal);
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--color-principal);
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+/*                                                              SECCION PORTFOLIO                                                            */
+.botones-navegacion-proyectos button{
+    padding: 10px;
+    margin: 2px;
+    font-size: 20px;
+    font-family: var(--funteMinecraft);
+    color: var(--color-principal);
+    border: 3px solid var(--color-principal);
+    background: transparent;
+}
+.botones-navegacion-proyectos button:hover{
+    color: var(--color-blanco);
+    background: var(--color-principal);
+}
+.portfolio{    
+    background-color: var(--color-bloques);
+    color: var(--color-blanco);
+    padding: 50px 20px;
+}
+.portfolio .contenido-seccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+.portfolio h2{
+    font-size: 48px;
+    font-family: var(--funteMinecraft);
+    text-align: center;
+    padding:20px 0;
+}
+.portfolio .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.portfolio .galeria .proyecto{
+    position: relative;
+    max-width: 500px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.portfolio .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.portfolio .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(26, 24, 143, 0.8),rgba(15, 162, 182, 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.portfolio .galeria .proyecto .overlay .iconos a{
+    border: 3px solid var(--color-fondo);
+    margin: 10px;
+    transition: 1s;
+}
+.portfolio .galeria .proyecto .overlay .iconos a{
+    color: var(--color-fondo);
+    font-size: 30px;
+}
+.portfolio .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+    color: var(--color-fondo);
+}
+.portfolio .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.portfolio .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+.portfolio .galeria .proyecto .overlay:hover .iconos i{
+    margin: 5px;
+}
+/*                                                                FOOTER                                                                 */
+
+footer{
+    background-color: var(--color-fondo);
+    color: var(--color-blanco);
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: var(--color-blanco);
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid var(--color-blanco);
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+footer .redes a:hover{
+    background-color: var(--color-principal);
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+/*                                                         RESPONSIVE                                                                     */
+@media screen and (max-width:980px) {
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: var(--color-bloques);
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;       
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid var(--color-blanco);
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
